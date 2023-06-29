@@ -1,0 +1,55 @@
+{
+  "name": "vite-vue3-template-ruofeng",
+  "private": false,
+  "version": "0.0.0",
+  "author": "ruofeng <ruofengOvO@github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write",
+    "lint": "eslint --fix ./src --ext .vue,.js,.ts",
+    "lint:style": "stylelint --fix ./src/**/**/*.{vue,styl}",
+    "prepare": "husky install",
+    "commit": "npx cz"
+  },
+  "lint-staged": {
+    "*.{vue,styl}": "stylelint --fix",
+    "*.{vue,js,ts}": "eslint --fix"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@unocss/preset-attributify": "^0.53.4",
+    "@unocss/preset-icons": "^0.53.4",
+    "@unocss/preset-wind": "^0.53.4",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.15.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.9.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^33.0.0",
+    "typescript": "^5.0.2",
+    "unocss": "^0.53.4",
+    "vite": "^4.3.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
